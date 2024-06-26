@@ -1,0 +1,189 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jPanel1::t:::x}"
+			"$verticalGroup": "par l {seq l {comp jPanel1:::p::p, space :0:0:x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"$locationPolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::x, comp jPanel3:::p::p, space u:::p, comp jPanel7:::p::p, space :p:6:p}, comp jPanel5::l:::x}"
+				"$verticalGroup": "par l {seq t {comp jPanel5:::p::p, space :::p, par l {comp jPanel3:::p::p, comp jPanel7:::p::p}, space :::x}}"
+			} ) {
+				name: "jPanel1"
+				"background": new java.awt.Color( 44, 47, 51, 255 )
+				"border": new javax.swing.border.BevelBorder( 0, null, null, null, null )
+				"foreground": new java.awt.Color( 153, 153, 153, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {comp jLabel3:::::x, comp jLabel2:::::x, comp jLabel4::l:::x}, space u:::p, par l {comp txtItem::l:p:197:p, comp txtSName:::p:197:p, comp txtSID:::p:197:p}, space :p::p}, seq l {space :p:35:p, comp bAdd:::p:91:p, space s:::p, comp bUpdate:::p::p, space s:::p, comp bDelete::::91:x, space :p:49:p}}"
+					"$verticalGroup": "par l {seq l {space :p:24:p, par b {comp txtSName::b:p::p, comp jLabel3::b:p:31:p}, space s:::p, par b {comp jLabel2::b:p:31:p, comp txtSID::b:p::p}, space s:::p, par b {comp jLabel4::b:p:31:p, comp txtItem::b:p::p}, space s:p::p, par b {comp bUpdate::b:p::p, comp bDelete::b:p::p, comp bAdd::b:p::p}, space :::x}}"
+				} ) {
+					name: "jPanel3"
+					"background": new java.awt.Color( 44, 47, 51, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel3"
+						"font": new java.awt.Font( "Segoe UI", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Supplier Name"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel2"
+						"font": new java.awt.Font( "Segoe UI", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Supplier ID"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtSName"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"border": new javax.swing.border.TitledBorder( "" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel4"
+						"font": new java.awt.Font( "Segoe UI", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Vehicle Part Name"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtSID"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"border": new javax.swing.border.TitledBorder( "" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtItem"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"border": new javax.swing.border.TitledBorder( "" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bUpdate"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "UPDATE"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bUpdateActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bDelete"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "DELETE"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bDeleteActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bAdd"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "ADD"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bAddActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :::p, comp btnGoBack:::p:73:p, space :p:230:p, comp jLabel7:::p::p, space :::x}}"
+					"$verticalGroup": "par l {seq t {space ::22:x, par l {comp btnGoBack:::p::p, comp jLabel7:::p:46:p}, space :::p}}"
+				} ) {
+					name: "jPanel5"
+					"background": new java.awt.Color( 25, 0, 50, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel7"
+						"background": new java.awt.Color( 255, 255, 255, 255 )
+						"font": new java.awt.Font( "Segoe UI", 1, 24 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "Manage Suppliers"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnGoBack"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 2, 11 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Back"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGoBackActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {comp jScrollPane1:::p:410:p, comp jPanel4::l:p::p}, space :::x}}"
+					"$verticalGroup": "par l {seq l {space :::p, comp jScrollPane1:::p:143:p, space s:::p, comp jPanel4:::p::p, space :::x}}"
+				} ) {
+					name: "jPanel7"
+					"background": new java.awt.Color( 25, 0, 50, 255 )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "jScrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "jTable1"
+							"background": new java.awt.Color( 25, 0, 50, 255 )
+							"border": new javax.swing.border.BevelBorder( 0, null, null, null, null )
+							"font": new java.awt.Font( "Dialog", 1, 12 )
+							"foreground": new java.awt.Color( 223, 223, 223, 255 )
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "Supplier Name" )
+								add( "Supplier ID" )
+								add( "Item" )
+							}, new java.util.Vector {
+								add( class java.lang.String )
+								add( class java.lang.String )
+								add( class java.lang.String )
+							}, new java.util.Vector {
+								add( true )
+								add( true )
+								add( true )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							} )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "jTable1MouseClicked", true ) )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p::p, comp jLabel1:::p:157:p, space :::p, comp txtSearch:::p:113:p, space u:::p, comp bSearch::::91:x, space :p:13:p}}"
+						"$verticalGroup": "par l {seq {space :::p, par b {comp jLabel1::b:p::p, comp txtSearch::b:p:32:p, comp bSearch::b:p::p}, space :0:10:x}}"
+					} ) {
+						name: "jPanel4"
+						"background": new java.awt.Color( 44, 47, 51, 255 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "jLabel1"
+							"font": new java.awt.Font( "Segoe UI", 1, 14 )
+							"foreground": new java.awt.Color( 223, 223, 223, 255 )
+							"text": "Search By Supplier ID"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtSearch"
+							"background": new java.awt.Color( 25, 0, 50, 255 )
+							"font": new java.awt.Font( "Dialog", 1, 14 )
+							"foreground": new java.awt.Color( 223, 223, 223, 255 )
+							"border": new javax.swing.border.TitledBorder( "" )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "bSearch"
+							"background": new java.awt.Color( 35, 39, 42, 255 )
+							"font": new java.awt.Font( "Segoe UI", 1, 14 )
+							"foreground": new java.awt.Color( 223, 223, 223, 255 )
+							"text": "Search"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bSearchActionPerformed", true ) )
+						} )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+		} )
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {space :0:400:x}"
+			"$verticalGroup": "par l {space :0:300:x}"
+		} ) {
+			name: "jPanel2"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 358 )
+		} )
+	}
+}

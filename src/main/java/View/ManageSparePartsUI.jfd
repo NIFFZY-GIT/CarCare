@@ -1,0 +1,347 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jPanel3::l:::x}"
+			"$verticalGroup": "par l {comp jPanel3::t:::x}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"background": new java.awt.Color( 51, 153, 255, 255 )
+			"$locationPolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:19:p, comp jPanel1:::p::p, par l {seq {space :::p, comp jPanel5:::p::p}, seq l {space :p:141:p, comp btnDelete:::p::p}}, par l {seq {space s:::p, comp jPanel2:::p::p, space ::34:x}, seq t {space :::x, comp btnSPOoStock:::p::p, space :p:53:p}}}, comp jPanel4::l:::x}"
+				"$verticalGroup": "par l {seq {comp jPanel4:::p::p, par l {seq {space :::p, par l {comp jPanel1::l:p::p, seq l {comp jPanel2:::p::p, space s:::p, comp btnSPOoStock:::p::p}}}, seq l {space :p:12:p, comp jPanel5:::p::p, space s:::p, comp btnDelete:::p::p}}, space :::x}}"
+			} ) {
+				name: "jPanel3"
+				"background": new java.awt.Color( 44, 47, 51, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {comp btnAdd:::p:81:p, comp jLabel2:::p::p}, par l {seq {space :12:12:p, comp txtSPQuantity:::::x}, seq l {space :::p, comp btnRemove:::p::p, space :0:0:x}}, space :p:12:p}, seq {par l {seq l {space :p:44:p, par l:::p {comp SPNHand::l:::x, comp SPNBezel::l:::x, comp SPNDial::l:::x, comp SPNCase:::::x, comp SPNCrown:::::x, comp SPNCrystle:::::x, comp SPNHourMarker::l::113:x}}, seq l {space :p:21:p, comp jLabel5:::p::p}}, space :::x}}"
+					"$verticalGroup": "par l {seq l {space :p:24:p, comp jLabel5:::p::p, space s:::p, comp SPNBezel:::p::p, space :::p, comp SPNCase:::p::p, space :::p, comp SPNCrown:::p::p, space :::p, comp SPNCrystle:::p::p, space :p:3:p, comp SPNDial:::p::p, space :p:3:p, comp SPNHand:::p::p, space :::p, comp SPNHourMarker:::p::p, space :p:30:p, par b {comp jLabel2::b:p::p, comp txtSPQuantity::b:::x}, space :p:15:p, par b {comp btnAdd::b:p::p, comp btnRemove::b:p::p}, space :::x}}"
+				} ) {
+					name: "jPanel1"
+					"background": new java.awt.Color( 44, 47, 51, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel5"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Vehicle Part Name"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "SPNBezel"
+						"background": new java.awt.Color( 44, 47, 51, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Seat"
+						"opaque": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SPNBezelActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "SPNCase"
+						"background": new java.awt.Color( 44, 47, 51, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Bumper"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SPNCaseActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "SPNCrown"
+						"background": new java.awt.Color( 44, 47, 51, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Wheel"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SPNCrownActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "SPNCrystle"
+						"background": new java.awt.Color( 44, 47, 51, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Battery"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SPNCrystleActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "SPNDial"
+						"background": new java.awt.Color( 44, 47, 51, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Door"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SPNDialActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "SPNHand"
+						"background": new java.awt.Color( 44, 47, 51, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Windscreen"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SPNHandActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "SPNHourMarker"
+						"background": new java.awt.Color( 44, 47, 51, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Window"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SPNHourMarkerActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel2"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Quantity "
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtSPQuantity"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"border": new javax.swing.border.TitledBorder( "" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnAdd"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Add"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnAddActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnRemove"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Remove"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnRemoveActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, par t {comp jLabel6:::p::p, seq {par l:::p {comp jLabel3::l:::x, comp jLabel8::l:::x, comp jLabel11::l:::x, comp jLabel13::l:::x, comp jLabel19::l:::x, comp jLabel21::l:::x, comp jLabel24::l:::x}, space u:::p, par l {comp jLabel7:::p:34:p, comp jLabel9:::p:34:p, par l {comp jLabel23::l:p:34:p, comp jLabel17::t:p:34:p, comp jLabel20::t:p:34:p, comp jLabel14::l:p:34:p, comp jLabel12::l:p:34:p}}}}, space :::p, par l {comp avbCase::t::51:x, comp avbCrown::l:::x, comp avbCrystle::l:::x, comp avbDial::t:::x, comp avbHand:::::x, comp avbHourMarker::l:::x, comp avbBezel::l:::x}, space :p::p}}"
+					"$verticalGroup": "par l {seq l {space :p:24:p, comp jLabel6:::p::p, space s:::p, par b {comp jLabel3::b:p::p, comp avbBezel::b:p:25:p, comp jLabel7::b:p::p}, space :::p, par b {comp jLabel8::b:p::p, comp avbCase::b:p:25:p, comp jLabel9::b:p::p}, space :::p, par b {comp jLabel11::b:p::p, comp avbCrown::b:p:25:p, comp jLabel12::b:p::p}, space :::p, par b {comp jLabel13::b:p::p, comp avbCrystle::b:p:25:p, comp jLabel14::b:p::p}, space :::p, par b {comp jLabel19::b:p::p, comp avbDial::b:p:25:p, comp jLabel20::b:p::p}, space :::p, par b {comp jLabel21::b:p::p, comp avbHand::b:p:25:p, comp jLabel17::b:p::p}, space :::p, par b {comp jLabel24::b:p::p, comp avbHourMarker::b:p:25:p, comp jLabel23::b:p::p}, space ::23:x}}"
+				} ) {
+					name: "jPanel2"
+					"background": new java.awt.Color( 44, 47, 51, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel6"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Availability"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel3"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Seat"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "avbBezel"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"horizontalAlignment": 4
+						"text": "0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel7"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel8"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Bumper"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel9"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "avbCase"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"horizontalAlignment": 4
+						"text": "0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel11"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Wheel"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel12"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel13"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Battery"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel14"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "avbCrystle"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"horizontalAlignment": 4
+						"text": "0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "avbCrown"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"horizontalAlignment": 4
+						"text": "0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel17"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "avbDial"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"horizontalAlignment": 4
+						"text": "0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel19"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Door"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel20"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel21"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Windowscreen"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "avbHand"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"horizontalAlignment": 4
+						"text": "0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel23"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel24"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Window"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "avbHourMarker"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"horizontalAlignment": 4
+						"text": "0"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp jScrollPane2::::340:x, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :::p, comp jScrollPane2::::282:x, space :::p}}"
+				} ) {
+					name: "jPanel5"
+					"background": new java.awt.Color( 25, 0, 50, 255 )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "jScrollPane2"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "jTable1"
+							"background": new java.awt.Color( 25, 0, 50, 255 )
+							"font": new java.awt.Font( "Dialog", 1, 12 )
+							"foreground": new java.awt.Color( 223, 223, 223, 255 )
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "Name" )
+								add( "ID" )
+								add( "Quantity" )
+								add( "Total" )
+							}, new java.util.Vector {
+								add( class java.lang.String )
+								add( class java.lang.String )
+								add( class java.lang.Integer )
+								add( class java.lang.Integer )
+							}, new java.util.Vector {
+								add( true )
+								add( true )
+								add( true )
+								add( true )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"gridColor": new java.awt.Color( 223, 223, 223, 255 )
+							"opaque": false
+							"selectionForeground": new java.awt.Color( 25, 0, 50, 255 )
+						} )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSPOoStock"
+					"background": new java.awt.Color( 35, 39, 42, 255 )
+					"font": new java.awt.Font( "Dialog", 1, 14 )
+					"foreground": new java.awt.Color( 223, 223, 223, 255 )
+					"text": "Spare Parts Out-of-Stock"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSPOoStockActionPerformed", true ) )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :::p, comp btnGoBack:::p:73:p, space :p:214:p, comp jLabel1:::p::p, space :::x}}"
+					"$verticalGroup": "par l {seq t {space ::30:x, par l {comp btnGoBack:::p::p, comp jLabel1:::p::p}, space :p:21:p}}"
+				} ) {
+					name: "jPanel4"
+					"background": new java.awt.Color( 25, 0, 50, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel1"
+						"font": new java.awt.Font( "Dialog", 1, 24 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "Manage Vehicle Parts"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnGoBack"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 2, 11 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Back"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGoBackActionPerformed", true ) )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnDelete"
+					"background": new java.awt.Color( 35, 39, 42, 255 )
+					"font": new java.awt.Font( "Dialog", 1, 14 )
+					"foreground": new java.awt.Color( 223, 223, 223, 255 )
+					"text": "Delete"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeleteActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

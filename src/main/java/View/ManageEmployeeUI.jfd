@@ -1,0 +1,190 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jPanel1:::p::p}"
+			"$verticalGroup": "par l {comp jPanel1::l:::x}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"$locationPolicy": 1
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosed", "formWindowClosed", true ) )
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "formWindowClosing", true ) )
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowOpened", "formWindowOpened", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp jPanel2::l:::x, seq {space :::p, comp jPanel4:::p::p, space :::p, comp jPanel3:::p::p, space :::x}}"
+				"$verticalGroup": "par l {seq l {comp jPanel2:::p::p, space u:p::p, par l:::p {comp jPanel4:::::x, comp jPanel3:::::x}, space :::x}}"
+			} ) {
+				name: "jPanel1"
+				"background": new java.awt.Color( 44, 47, 51, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp btnGoBack:::p:73:p, space :p:167:p, comp jLabel6:::p::p, space :::x}}"
+					"$verticalGroup": "par l {seq l {space :p:26:p, par l {comp jLabel6:::p::p, comp btnGoBack:::p::p}, space ::23:x}}"
+				} ) {
+					name: "jPanel2"
+					"background": new java.awt.Color( 25, 0, 50, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel6"
+						"font": new java.awt.Font( "Dialog", 1, 24 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "Manage Repair Jobs"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnGoBack"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 2, 11 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Back"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGoBackActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp jScrollPane1:::p:388:p, space :::x}}"
+					"$verticalGroup": "par l {seq l {space :::p, comp jScrollPane1::::0:x, space :::p}}"
+				} ) {
+					name: "jPanel3"
+					"background": new java.awt.Color( 25, 0, 50, 255 )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "jScrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "tbl_jobs"
+							"background": new java.awt.Color( 25, 0, 50, 255 )
+							"font": new java.awt.Font( "Dialog", 1, 12 )
+							"foreground": new java.awt.Color( 223, 223, 223, 255 )
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "Job ID" )
+								add( "Repair Type" )
+								add( "Customer ID" )
+								add( "Repair State" )
+							}, new java.util.Vector {
+								add( class java.lang.Object )
+								add( class java.lang.Object )
+								add( class java.lang.Object )
+								add( class java.lang.Object )
+							}, new java.util.Vector {
+								add( true )
+								add( true )
+								add( true )
+								add( true )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tbl_jobsMouseClicked", true ) )
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {seq l {par t:::p {comp jButton5::::85:x, comp jButton4:::::x}, space s:::p, par l {seq {comp jButton2:::p:84:p, space s:::p, comp jButton3::::86:x}, comp jButton1:::::x}}, seq {par l:::p {comp jLabel3::l::118:x, comp jLabel2::l:::x, comp jLabel1::l:::x, comp jLabel5::l:::x}, space :p:23:p, par t:::p {comp txt_repair_type::l:::x, comp txt_customer_id::l:::x, comp cmb_repair_state::::149:x, comp txt_job_id:::::x}}}, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :::p, par b {comp txt_job_id::b:p::p, comp jLabel1::b:p::p}, space s:::p, par b {comp txt_repair_type::b:p::p, comp jLabel2::b:p::p}, space s:::p, par b {comp txt_customer_id::b:p::p, comp jLabel3::b:p::p}, space s:::p, par b {comp jLabel5::b:p:16:p, comp cmb_repair_state::b:p::p}, space :p:32:p, par b {comp jButton4::b:p::p, comp jButton2::b:p::p, comp jButton3::b:p::p}, space u:::p, par b {comp jButton5::b:p::p, comp jButton1::b:p::p}, space :::x}}"
+				} ) {
+					name: "jPanel4"
+					"background": new java.awt.Color( 44, 47, 51, 255 )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txt_repair_type"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"border": new javax.swing.border.TitledBorder( "" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel3"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Customer ID"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txt_customer_id"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"border": new javax.swing.border.TitledBorder( "" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txt_job_id"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"border": new javax.swing.border.TitledBorder( "" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel1"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Job ID"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel2"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Repair Type"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel5"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Repair State"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButton2"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Update"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton2ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cmb_repair_state"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 16 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "Pending"
+							addElement( "Pending" )
+							addElement( "Completed" )
+						}
+						auxiliary() {
+							"JavaCodeGenerator.typeParameters": "String"
+						}
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButton4"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Add"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton4ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButton3"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Delete"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton3ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButton5"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Clear"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton5ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButton1"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Allocate Employees"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton1ActionPerformed", true ) )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) )
+	}
+}

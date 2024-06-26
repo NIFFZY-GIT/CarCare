@@ -1,0 +1,205 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp jPanel3:::p::p, space :0:0:x}}"
+			"$verticalGroup": "par l {seq l {comp jPanel3:::p::p, space :0:0:x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"background": new java.awt.Color( 51, 153, 255, 255 )
+			"$locationPolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp jPanel4::l:::x, seq {par l {seq l {space :p:24:p, comp jPanel1:::p::p, space :p:25:p}, seq {space :::x, comp jPanel2:::p::p}}, space :::x, comp jPanel5:::p::p, space :::x}}"
+				"$verticalGroup": "par l {seq {comp jPanel4:::p::p, par l {seq {space s:::p, comp jPanel1:::p::p, space :::p, comp jPanel2:::p::p, space :0:18:x}, seq {space :p:12:p, comp jPanel5:::::x}}, space :p:15:p}}"
+			} ) {
+				name: "jPanel3"
+				"background": new java.awt.Color( 44, 47, 51, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l:::p {comp jLabel4:::::x, comp jLabel2::l:::x}, space :12:12:p, par l {comp txtDate:::::x, comp txtAmount:::::x}, space :p:12:p}, seq {par l {seq l {space :p:28:p, comp btnAdd:::p:81:p, space s:::p, comp btnRemove:::p::p}, seq l {space :p:81:p, comp btnDelete:::p::p}}, space ::22:x}}"
+					"$verticalGroup": "par l {seq {space :p:35:p, par b {comp jLabel2::b:p::p, comp txtDate::b:::x}, space s:p::p, par b {comp jLabel4::b:p::p, comp txtAmount::b:::x}, space :p:33:p, par b {comp btnAdd::b:p::p, comp btnRemove::b:p::p}, space s:::p, comp btnDelete:::p::p, space :::p}}"
+				} ) {
+					name: "jPanel1"
+					"background": new java.awt.Color( 44, 47, 51, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel2"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Date"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtDate"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"border": new javax.swing.border.TitledBorder( "" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnAdd"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Add"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnAddActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnRemove"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Remove"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnRemoveActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnDelete"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Delete"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeleteActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel4"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Amount"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtAmount"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"border": new javax.swing.border.TitledBorder( "" )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l:::p {comp jLabel8:::::x, comp jLabel3:::::x, comp jLabel10:::::x}, space u:::p, par l {comp jLabel7:::p:34:p, comp jLabel9:::p:34:p, comp jLabel11:::p:34:p}, space :::p, par l {comp avbExp::t:::x, comp avbInc::t::65:x, comp avbTot::t:::x}, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :p:24:p, par b {comp jLabel3::b:p::p, comp avbInc::b:p:25:p, comp jLabel7::b:p::p}, space :::p, par b {comp jLabel8::b:p::p, comp avbExp::b:p:25:p, comp jLabel9::b:p::p}, space s:::p, par b {comp jLabel10::b:p::p, comp avbTot::b:p:25:p, comp jLabel11::b:p::p}, space :::x}}"
+				} ) {
+					name: "jPanel2"
+					"background": new java.awt.Color( 44, 47, 51, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel3"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Total Income"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "avbInc"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"horizontalAlignment": 4
+						"text": "0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel7"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel8"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Total Expense"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel9"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "avbExp"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"horizontalAlignment": 4
+						"text": "0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel10"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Total"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel11"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "avbTot"
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"horizontalAlignment": 4
+						"text": "0"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :p::p, comp jScrollPane2::::380:x, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :::p, comp jScrollPane2::::0:x, space :::p}}"
+				} ) {
+					name: "jPanel5"
+					"background": new java.awt.Color( 25, 0, 50, 255 )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "jScrollPane2"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "jTable1"
+							"background": new java.awt.Color( 25, 0, 50, 255 )
+							"font": new java.awt.Font( "Dialog", 1, 12 )
+							"foreground": new java.awt.Color( 223, 223, 223, 255 )
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "Date" )
+								add( "Income" )
+								add( "Expense" )
+								add( "Total" )
+							}, new java.util.Vector {
+								add( class java.lang.String )
+								add( class java.lang.Integer )
+								add( class java.lang.Integer )
+								add( class java.lang.Integer )
+							}, new java.util.Vector {
+								add( true )
+								add( true )
+								add( true )
+								add( true )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"gridColor": new java.awt.Color( 223, 223, 223, 255 )
+							"opaque": false
+							"selectionForeground": new java.awt.Color( 25, 0, 50, 255 )
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :::p, comp btnGoBack:::p:73:p, space :p:127:p, comp jLabel1:::p::p, space :::x}}"
+					"$verticalGroup": "par l {seq t {space ::30:x, par l {comp btnGoBack:::p::p, comp jLabel1:::p::p}, space :p:21:p}}"
+				} ) {
+					name: "jPanel4"
+					"background": new java.awt.Color( 25, 0, 50, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel1"
+						"font": new java.awt.Font( "Dialog", 1, 24 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "Income Expense Report"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnGoBack"
+						"background": new java.awt.Color( 35, 39, 42, 255 )
+						"font": new java.awt.Font( "Dialog", 2, 11 )
+						"foreground": new java.awt.Color( 223, 223, 223, 255 )
+						"text": "Back"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGoBackActionPerformed", true ) )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) )
+	}
+}

@@ -1,0 +1,80 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jPanel1::l:::x}"
+			"$verticalGroup": "par l {comp jPanel1::l:::x}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"$locationPolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq l {space :p:43:p, comp jPanel2:::p::p}, seq l {space :p:187:p, comp btnLogin:::p::p}}, space ::43:x}, comp jPanel3:::::x}"
+				"$verticalGroup": "par l {seq l {comp jPanel3:::p::p, space :::p, comp jPanel2:::p::p, space s:::p, comp btnLogin:::p::p, space ::29:x}}"
+			} ) {
+				name: "jPanel1"
+				"background": new java.awt.Color( 44, 47, 51, 255 )
+				"foreground": new java.awt.Color( 44, 47, 51, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp jLabel1::t:::x}"
+					"$verticalGroup": "par l {seq {space :p:18:p, comp jLabel1::::50:x, space :::p}}"
+				} ) {
+					name: "jPanel3"
+					"background": new java.awt.Color( 25, 0, 50, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel1"
+						"font": new java.awt.Font( "Dialog", 1, 28 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"horizontalAlignment": 0
+						"text": "TIMETICKER WATCH SHOP"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :p:34:p, par t {comp lblUsername:::p:101:p, comp lblPassword:::p:101:p}, space ::29:x, par l:::p {comp txtUsername:::::x, comp txtPassword::::188:x}, space :p:35:p}}"
+					"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp lblUsername::b:p:29:p, comp txtUsername::b:p:40:p}, space s:::p, par b {comp lblPassword::b:p:29:p, comp txtPassword::b:p:41:p}, space ::13:x}}"
+				} ) {
+					name: "jPanel2"
+					"background": new java.awt.Color( 44, 47, 51, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblUsername"
+						"background": new java.awt.Color( 246, 246, 246, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 246, 246, 246, 255 )
+						"text": "Username"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblPassword"
+						"background": new java.awt.Color( 246, 246, 246, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 246, 246, 246, 255 )
+						"text": "Password"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtUsername"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 246, 246, 246, 255 )
+						"border": new javax.swing.border.TitledBorder( "" )
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "txtPassword"
+						"background": new java.awt.Color( 25, 0, 50, 255 )
+						"font": new java.awt.Font( "Dialog", 1, 18 )
+						"foreground": new java.awt.Color( 246, 246, 246, 255 )
+						"border": new javax.swing.border.TitledBorder( "" )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnLogin"
+					"background": new java.awt.Color( 35, 39, 42, 255 )
+					"font": new java.awt.Font( "Dialog", 1, 18 )
+					"foreground": new java.awt.Color( 246, 246, 246, 255 )
+					"text": "Login"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnLoginActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) )
+	}
+}

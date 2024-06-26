@@ -1,0 +1,130 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::15:x, comp jPanel1:::p::p, space :p:197:p}}"
+			"$verticalGroup": "par l {seq l {space :p:47:p, comp jPanel1:::p::p, space ::389:x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"background": new java.awt.Color( 51, 0, 0, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :p:194:p, comp jPanel2:::p::p, space ::227:x}, seq l {space :p:108:p, comp jButton1:::p::p, space :::x, comp back:::p::p, space :p:111:p}}"
+				"$verticalGroup": "par l {seq l {space :p:31:p, comp jPanel2:::p::p, space ::34:x, par b {comp jButton1::b:p::p, comp back::b:p::p}, space :p:33:p}}"
+			} ) {
+				name: "jPanel1"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {par l {seq l {space :p:10:p, par l {comp jLabel3::l:p:54:p, comp jLabel8::l:p:54:p, comp jLabel11::l:p:54:p, comp jLabel13::l:p:54:p, comp jLabel19::l:p:54:p, comp jLabel24::l:p::p, comp jLabel21::l:p:54:p}, space s:::p, par l {seq l {comp jLabel7:::p:34:p, space :p:12:p, comp jSpinner1:::p::p}, seq l {par l {comp jLabel17::t:p:34:p, comp jLabel20::t:p:34:p, comp jLabel9::t:p:34:p, comp jLabel23::l:p:34:p, comp jLabel14::l:p:34:p, comp jLabel12::l:p:34:p}, space u:::p, par l {par l:l {comp jSpinner2::l:p::p, comp jSpinner3::l:p::p, comp jSpinner4::l:p::p, comp jSpinner5::l:p::p, comp jSpinner6::t:p::p}, comp jSpinner7::t:p::p}}}}, seq l {space :p:45:p, comp jLabel6:::p::p}}, space :::x}}"
+					"$verticalGroup": "par l {seq l {space :p::p, comp jLabel6:::p::p, space s:::p, par b {comp jLabel3::b:p::p, comp jLabel7::b:p::p, comp jSpinner1::b:p::p}, space :::p, par b {comp jLabel8::b:p::p, comp jLabel9::b:p::p, comp jSpinner2::b:p::p}, space :::p, par b {comp jLabel11::b:p::p, comp jLabel12::b:p::p, comp jSpinner3::b:p::p}, space :::p, par b {comp jLabel13::b:p::p, comp jLabel14::b:p::p, comp jSpinner4::b:p::p}, space :::p, par b {comp jLabel19::b:p::p, comp jLabel20::b:p::p, comp jSpinner5::b:p::p}, space :::p, par b {comp jLabel21::b:p::p, comp jLabel17::b:p::p, comp jSpinner6::b:p::p}, space :::p, par b {comp jLabel24::b:p::p, comp jLabel23::b:p::p, comp jSpinner7::b:p::p}, space ::29:x}}"
+				} ) {
+					name: "jPanel2"
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel6"
+						"font": new java.awt.Font( "Dialog", 1, 14 )
+						"text": "Order Spare Parts"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel3"
+						"font": new java.awt.Font( "Dialog", 1, 12 )
+						"text": "Seat"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel7"
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel8"
+						"font": new java.awt.Font( "Dialog", 1, 12 )
+						"text": "Bumper"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel9"
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel11"
+						"font": new java.awt.Font( "Dialog", 1, 12 )
+						"text": "Wheel"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel12"
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel13"
+						"font": new java.awt.Font( "Dialog", 1, 12 )
+						"text": "Battery"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel14"
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel17"
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel19"
+						"font": new java.awt.Font( "Dialog", 1, 12 )
+						"text": "Door"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel20"
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel21"
+						"font": new java.awt.Font( "Dialog", 1, 12 )
+						"text": "Wnidowscreen"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel23"
+						"text": "-"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel24"
+						"font": new java.awt.Font( "Dialog", 1, 12 )
+						"text": "Window"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "jSpinner1"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "jSpinner2"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "jSpinner3"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "jSpinner4"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "jSpinner5"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "jSpinner6"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "jSpinner7"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "jButton1"
+					"text": "order"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton1ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "back"
+					"text": "back"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
